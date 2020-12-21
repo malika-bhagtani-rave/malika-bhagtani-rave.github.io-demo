@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="font/ArchivoNarrow-Medium.ttf">
+
+  <title>FE Challenge</title>
+</head>
+
+<body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img class="img-cls" src="assets/SVGs/Logo.svg">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="row">
+          <img src="assets/SVGs/icn_search.svg" class="srch-ico mr-4">
+          <img src="assets/SVGs/icn_person.svg" class="prsn-ico">
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="search-email">
+    <div class="container">
+      <div class="heading-cls">
+        <h1>Search Any Email Address</h1>
+        <h4><span>Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</h4>
+      </div>
+      <!-- <form name="emailForm" > -->
+      <div class="text-cls row">
+        <div class="input-cls col-lg-10 col-md-10 col-sm-8 col-xs-12">
+          <fieldset class="float-label">
+            <input name="email" id="email" onfocusout="resetTxt()" onkeyup="ValidateEmail()" autocomplete="off"
+              type="text" class="form-control" required />
+            <label for="email" id="lblEmail">Email</label>
+          </fieldset>
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+          <button type="submit" class="btn btn-cls mb-2" onclick="sendEmailData()">GO!</button>
+        </div>
+      </div>
+      <div id="errorDiv" class="row">
+        <div class="col-lg-10 col-sm-10 col-md-10 col-xs-12">
+          <p id="validate-msg" class="alert alert-danger para-error"></p>
+        </div>
+      </div>
+      <!-- </form> -->
+      <div class="lock-row row">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 lock-cls">
+          <img src="assets/SVGs/lock.svg">
+        </div>
+        <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 lock-txt">
+          <h6>Enter Any Email Address. They won't be notified.</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="emllkup">
+    <div class="head-cls">
+      <h1>Reverse Email Lookup</h1>
+    </div>
+    <div>
+      <p class="para-cls">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+    </div>
+    <div class="container">
+      <!-- <ol class="number-list">
+        <li>
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </li>
+        <li>
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </li>
+        <li>
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </li>
+        <li>
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </li>
+        <li>
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </li>
+        <li>
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </li>
+      </ol> -->
+      <div class="row">
+        <div id="numberDiv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="row list-number">
+            <div class="border-cls col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <h1 class="border">1</h1>
+            </div>
+            <div class="data-border col-lg-10 col-md-10 col-sm-10 col-xs-10">
+              <div class="list-heading">
+                <h1>Lorem Ipsum</h1>
+              </div>
+              <div class="list-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row list-number">
+            <div class="border-cls col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <h1 class="border">2</h1>
+            </div>
+            <div class="data-border col-lg-10 col-md-10 col-sm-10 col-xs-10">
+              <div class="list-heading">
+                <h1>Lorem Ipsum</h1>
+              </div>
+              <div class="list-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row list-number">
+            <div class="border-cls col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <h1 class="border">3</h1>
+            </div>
+            <div class="data-border col-lg-10 col-md-10 col-sm-10 col-xs-10">
+              <div class="list-heading">
+                <h1>Lorem Ipsum</h1>
+              </div>
+              <div class="list-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="numberDiv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="row list-number">
+            <div class="border-cls col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <h1 class="border">4</h1>
+            </div>
+            <div class="data-border col-lg-10 col-md-10 col-sm-10 col-xs-10">
+              <div class="list-heading">
+                <h1>Lorem Ipsum</h1>
+              </div>
+              <div class="list-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row list-number">
+            <div class="border-cls col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <h1 class="border">5</h1>
+            </div>
+            <div class="data-border col-lg-10 col-md-10 col-sm-10 col-xs-10">
+              <div class="list-heading">
+                <h1>Lorem Ipsum</h1>
+              </div>
+              <div class="list-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row list-number">
+            <div class="border-cls col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <h1 class="border">6</h1>
+            </div>
+            <div class="data-border col-lg-10 col-md-10 col-sm-10 col-xs-10">
+              <div class="list-heading">
+                <h1>Lorem Ipsum</h1>
+              </div>
+              <div class="list-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="footer">
+    <div class="container-fluid">
+      <footer>
+        <div class="row">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea
+              commodo consequat.</p>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 footer-lnk">
+            <ul class="line-navbar">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+</body>
+
+</html>
